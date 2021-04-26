@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddCompareCollectionViewCell" id="gTV-IL-0wX" customClass="AddCompareCollectionViewCell" customModule="Keyword_Plus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="184" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="184" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shq-cv-gni">
+                        <rect key="frame" x="5" y="5" width="174" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkU-rq-CxG" customClass="PMSuperButton" customModule="PMSuperButton">
+                                <rect key="frame" x="0.0" y="0.0" width="174" height="40"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                <state key="normal" title="+ Add" backgroundImage="btn_bg_round_blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ripple" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rkU-rq-CxG" secondAttribute="bottom" id="03d-rH-FgK"/>
+                            <constraint firstItem="rkU-rq-CxG" firstAttribute="leading" secondItem="shq-cv-gni" secondAttribute="leading" id="5YZ-vt-AHG"/>
+                            <constraint firstItem="rkU-rq-CxG" firstAttribute="top" secondItem="shq-cv-gni" secondAttribute="top" id="7Gl-Aa-Wl6"/>
+                            <constraint firstAttribute="trailing" secondItem="rkU-rq-CxG" secondAttribute="trailing" id="kP4-oH-PMJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="shq-cv-gni" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="011-um-uTK"/>
+                <constraint firstItem="shq-cv-gni" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="9qN-RT-zhy"/>
+                <constraint firstAttribute="trailing" secondItem="shq-cv-gni" secondAttribute="trailing" constant="5" id="qpq-2f-v7K"/>
+                <constraint firstAttribute="bottom" secondItem="shq-cv-gni" secondAttribute="bottom" constant="5" id="yQR-2T-unF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="184" height="50"/>
+            <connections>
+                <outlet property="btnAdd" destination="rkU-rq-CxG" id="xhK-cU-wDN"/>
+                <outlet property="viewContainerMain" destination="shq-cv-gni" id="2iT-AL-yNe"/>
+            </connections>
+            <point key="canvasLocation" x="228.98550724637684" y="91.741071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_bg_round_blue" width="69.333335876464844" height="30"/>
+    </resources>
+</document>

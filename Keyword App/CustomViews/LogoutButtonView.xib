@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="LogoutButtonView" customModule="Keyword_Plus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="69" height="26"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zn2-Jj-McB">
+                    <rect key="frame" x="0.0" y="0.0" width="69" height="26"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTY-rK-FOR">
+                            <rect key="frame" x="0.0" y="0.0" width="69" height="26"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="11"/>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" red="0.098039215690000001" green="0.74117647060000003" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.49803921569999998" green="1" blue="0.5568627451" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="HT5-T7-GBo"/>
+                        <constraint firstItem="PTY-rK-FOR" firstAttribute="top" secondItem="Zn2-Jj-McB" secondAttribute="top" id="JRy-RS-WYA"/>
+                        <constraint firstAttribute="trailing" secondItem="PTY-rK-FOR" secondAttribute="trailing" id="ekx-I1-2N6"/>
+                        <constraint firstItem="PTY-rK-FOR" firstAttribute="leading" secondItem="Zn2-Jj-McB" secondAttribute="leading" id="fkg-tT-v4K"/>
+                        <constraint firstAttribute="bottom" secondItem="PTY-rK-FOR" secondAttribute="bottom" id="pPc-6A-PrE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zn2-Jj-McB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1hK-ge-xAx"/>
+                <constraint firstItem="Zn2-Jj-McB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="X7v-jL-buW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zn2-Jj-McB" secondAttribute="trailing" id="dCk-kV-u3k"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zn2-Jj-McB" secondAttribute="bottom" id="vnl-QT-lMC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnLogout" destination="PTY-rK-FOR" id="Pz9-Mo-M8g"/>
+            </connections>
+            <point key="canvasLocation" x="137.8125" y="99.295774647887328"/>
+        </view>
+    </objects>
+</document>
